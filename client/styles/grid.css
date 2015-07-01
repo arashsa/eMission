@@ -1,0 +1,26 @@
+/*A clear-fix for collapsing elements in the grid*/
+.grid-two-column::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Basic two-column grid */
+.grid-two-column {
+    margin: 1%;
+    padding: 1%;
+}
+
+.grid-two-column > div{
+    margin: 1%;
+    padding: 1%;
+    float:left;
+    width: 46%;
+    min-width: 300px;
+}
+
+/* Banner inside grid elements */
+.inner-banner {
+    position: absolute;
+    text-align: center;
+}

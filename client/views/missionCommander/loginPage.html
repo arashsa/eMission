@@ -1,0 +1,16 @@
+<template name="loginPage">
+    <div class="login">
+        <form id="login-form" action="action" class="form-login">
+            <div class="login">
+                <input type="text" id="login-email" placeholder="brukernavn"/>
+                <input type="password" id="login-password" placeholder="passord"/>
+                <input type="submit" id="login-button" value="Logg inn" />
+                <p class="failed-login">
+                    {{#if failedLoginMessage.show}}
+                        Feil brukernavn eller passord.
+                    {{/if}}
+                </p>
+            </div>
+        </form>
+    </div>
+</template>
